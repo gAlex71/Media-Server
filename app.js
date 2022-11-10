@@ -1,5 +1,5 @@
 const NodeMediaServer = require('node-media-server');
-
+const path = require('node:path')
 
 const config = {
     host: '127.0.0.1',
@@ -20,7 +20,7 @@ const config = {
         mediaroot: './media'
     },
     relay: {
-        ffmpeg: '/usr/bin/ffmpeg',
+        ffmpeg: 'C:/Users/GusevAV/ffmpeg/bin/ffmpeg.exe',
         tasks: [
             {
                 app: 'live',
@@ -32,7 +32,7 @@ const config = {
         ]
     },
     fission: {
-      ffmpeg: '/usr/bin/ffmpeg',
+      ffmpeg: 'C:/Users/GusevAV/ffmpeg/bin/ffmpeg.exe',
       tasks: [
         {
           rule: "live/*",
